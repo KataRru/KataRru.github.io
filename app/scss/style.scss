@@ -1,0 +1,46 @@
+//Import Libs
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/bootstrap-grid.min';
+@import 'libs/fonts';
+
+//Import Base
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/media';
+
+//Styles
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Arima', cursive;
+    font-display: swap;
+}
+
+h1, h2, h3, h4 ,h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+    
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.divider {
+    text-align: center;
+    width: 60px;
+    height: 2px;
+    background-color: $main-color;
+    margin: 25px auto 0 auto;
+}
+
+//Import Blocks
+
+@import 'blocks/promo';
+@import 'blocks/social';
+@import 'blocks/aboutme';
+@import 'blocks/hamburger';
+@import 'blocks/resume';
+@import 'blocks/skills';
+@import 'blocks/portfolio';

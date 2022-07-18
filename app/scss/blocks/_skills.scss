@@ -1,0 +1,102 @@
+.skills {
+    padding: 126px 0 0 0;
+
+    &__title {
+        position: relative;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -7px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 60px;
+        text-align: center;
+        margin-top: 6px;
+    }
+
+    &__items {
+        margin-top: 60px;
+        padding: 0 10px;
+        display: grid;
+        grid-template: repeat(2, minmax(267px, auto)) / repeat(4, 267px);
+        grid-auto-rows: minmax(270px, auto);
+        gap: 13px;
+    }
+    
+    &__card {
+        padding: 30px 30px 25px 30px;
+        min-height: 270px;
+        border: 1px solid black;
+
+        &-title {
+            margin-top: 20px;
+            margin-bottom: 0;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        p {
+            margin-top: 15px;
+            margin-bottom: 0;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    &__ratings {
+        padding-top: 130px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        gap: 50px;
+        h3 {
+            position: relative;
+            margin-bottom: 5px;
+            margin-left: 15px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            @include before_circle;
+            &:before {
+                top: -9px;
+                left: -16px;
+            }
+        }
+    }
+
+    &__item {
+        height: 70px;
+        position: relative;
+    }
+    &__procent {
+        position: relative;
+        width: 30px;
+        top: -27px;
+        right: -267px;
+    }
+
+    &__rating {
+        width: 300px;
+        height: 13px;
+        background: #E8E4DE;
+        border-radius: 4px;
+        grid-column: 1 / 3;
+        span {
+            display: block;
+            height: 100%;
+            background-color: $main-color;
+            border-radius: 4px;
+        }
+    }
+
+}

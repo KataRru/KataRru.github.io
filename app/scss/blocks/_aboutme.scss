@@ -1,0 +1,82 @@
+.aboutme {
+    padding-top: 120px;
+    height: 700px;
+
+    &__content {
+        display: flex;
+    }
+
+    &__item {
+        width: 600px;
+        margin: 10px 0 0 70px;
+    }
+
+    &__subtitle {
+        position: relative;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        @include before_circle;
+        &:before {
+            top: -8px;
+            left: -11px;
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 60px;
+        margin-top: 6px;
+    }
+
+    &__divider {
+        width: 60px;
+        height: 2.4px;
+        background-color: $main-color;
+    }
+
+    &__dscr {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 24px;
+    }
+
+    &__skills {
+        position: absolute;
+        padding-top: 40px;
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__skill {
+        max-width: 200px;
+        min-height: 89px;
+        margin: 0 55px 20px 55px;
+    }
+
+    &__prof-skills {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    &__dscr-skills {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    &__img {
+        position: relative;
+        left: -50px;
+        top: 40px;
+        @include before_circle;
+        &:before {
+            left: -19px;
+            top: -14px;
+        }
+    }
+}
