@@ -1,0 +1,42 @@
+.policy {
+    padding: 20px 50px 30px 50px;
+    h1 {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 50px;
+        font-family: 'Roboto', sans-serif;
+    }
+    h2 {
+        font-size: 25px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+    p {
+        margin-top: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+    &__path {
+        
+        &-two {
+            margin-top: 50px;
+        }
+        &-tree {
+            margin-top: 50px;
+        }
+        &-four {
+            margin-top: 50px;
+        }
+        &-five {
+            margin-top: 50px;
+        }
+        &-six {
+            margin-top: 50px;
+        }
+        &-seven {
+            margin-top: 50px;
+        }
+        &-eight {
+            margin-top: 50px;
+        }
+    }
+}   
