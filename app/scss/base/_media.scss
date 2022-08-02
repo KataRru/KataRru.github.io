@@ -1,15 +1,162 @@
-@media (max-width:1200px) {
-
+@media (max-width: 1300px) {
+    .sidepanel {
+        display: none;
+    }
 }
 
-@media (max-width:991px) {
-
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .promo {
+        &__item {
+            padding-left: 0;
+        }
+    }
+    .aboutme {
+        &__content {
+            grid-template-columns: 400px 520px;
+            column-gap: 40px;
+        }
+        &__text {
+            width: 500px;
+        }
+        &__skills {
+            column-gap: 20px;
+            grid-template: repeat(2, minmax(115px, auto))/repeat(2, 250px);
+        }
+        &__skill {
+            grid-template-columns: 40px 195px;
+            column-gap: 15px;
+        }
+    }
 }
 
-@media (max-width:756px) {
-
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .promo {
+        background: url(../img/main_bg.jpg) no-repeat 54%/cover;
+    }
+    .aboutme {
+        &__content {
+            grid-template-columns: 300px 380px;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__text {
+            width: 390px;
+        }
+        &__skills {
+            padding-top: 30px;
+            grid-template-columns: 390px;
+            grid-auto-rows: minmax(115px, auto);
+            row-gap: 0px;
+        }
+        &__skill {
+            grid-template-columns: 40px 320px;
+            column-gap: 20px;
+        }
+    }
 }
 
-@media (max-width:575px) {
-    
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .promo {
+        &__title {
+            width: 315px;
+            font-size: 30px;
+            line-height: 39px;
+        }
+    }
+    .aboutme {
+        padding-top: 40px;
+        &__content {
+            grid-template: 400px auto auto / 1fr;
+        }
+        &__text {
+            width: 500px;
+        }
+        &__skills {
+            grid-template-columns: repeat(2, 260px);
+            column-gap: 10px;
+        }
+        &__skill {
+            grid-template-columns: 40px 200px;
+            column-gap: 20px;
+        }
+        &__photo {
+            grid-row: unset;
+            img {
+                height: 100%;
+            }
+        }
+        &__subtitle {
+            padding-top: 46px;
+            &:before {
+                top: 38px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 25px;
+        }
+        &__link {
+            &:before {
+                left: 20px
+            }
+        }
+    }
+    .hamburger {
+        top: 10px;
+        right: 10px;
+    }
+    .promo {
+        background: url(../img/main_bg.jpg) no-repeat 58%/cover;
+        &__title {
+            font-size: 26px;
+            width: 300px;
+        }
+        &__link {
+            margin-right: 0;
+            margin-top: 30px;
+        }
+    }
+    .aboutme {
+        padding-top: 100px;
+        &__content {
+            grid-template: 340px auto auto / 1fr;
+        }
+        &__photo {
+            width: 97%;
+        }
+        &__subtitle {
+            margin-left: 10px;
+        }
+        &__title {
+            font-size: 25px;
+            line-height: 50px;
+            margin-top: 26px;
+        }
+        &__text {
+            width: 310px;
+            margin-top: 20px;
+        }
+        &__skills {
+            grid-template-columns: 1fr;
+        }
+    }
 }
