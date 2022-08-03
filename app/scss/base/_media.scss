@@ -30,6 +30,13 @@
             column-gap: 15px;
         }
     }
+    .resume {
+        &__wrapper {
+            padding: 65px 0 0 0;
+            grid-template-columns: repeat(2, 420px);
+            gap: 95px
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -40,6 +47,7 @@
         background: url(../img/main_bg.jpg) no-repeat 54%/cover;
     }
     .aboutme {
+        padding-top: 100px;
         &__content {
             grid-template-columns: 300px 380px;
         }
@@ -58,6 +66,12 @@
         &__skill {
             grid-template-columns: 40px 320px;
             column-gap: 20px;
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2, 300px);
+            gap: 95px;
         }
     }
 }
@@ -100,6 +114,18 @@
             &:before {
                 top: 38px;
             }
+        }
+    }
+    .resume {
+        &__title {
+            padding-top: 230px;
+            &:before {
+                top: 222px;
+            }
+        }
+        &__wrapper {
+            padding: 50px 0 0 0;
+            grid-template-columns: repeat(1, 515px);
         }
     }
 }
@@ -157,6 +183,18 @@
         }
         &__skills {
             grid-template-columns: 1fr;
+        }
+    }
+    .resume {
+        &__title {
+            padding-top: 430px;
+            &:before {
+                top: 422px;
+            }
+        }
+        &__wrapper {
+            grid-template-columns: repeat(1, 300px);
+            gap: 35px;
         }
     }
 }
